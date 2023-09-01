@@ -1,0 +1,211 @@
+==============================================================================
+20230823 18:02:00.520 - INFO - + START SUITE: testExecutionFlow [ ]
+==============================================================================
+20230823 18:02:00.520 - INFO - +- START TEST: Skip on failure Example [ ]
+------------------------------------------------------------------------------
+20230823 18:02:00.520 - INFO - +-- START KEYWORD: BuiltIn.Fail [ this test will be marked as skipped instead of failed ]
+20230823 18:02:00.520 - FAIL - this test will be marked as skipped instead of failed
+20230823 18:02:00.520 - DEBUG - Traceback (most recent call last):
+  None
+AssertionError: this test will be marked as skipped instead of failed
+20230823 18:02:00.534 - INFO - +-- END KEYWORD: BuiltIn.Fail (14)
+------------------------------------------------------------------------------
+20230823 18:02:00.534 - INFO - +- END TEST: Skip on failure Example (14)
+------------------------------------------------------------------------------
+20230823 18:02:00.534 - INFO - +- START TEST: Skip Example [ ]
+------------------------------------------------------------------------------
+20230823 18:02:00.534 - INFO - +- END TEST: Skip Example (0)
+------------------------------------------------------------------------------
+20230823 18:02:00.534 - INFO - +- START TEST: Test 1 [ ]
+------------------------------------------------------------------------------
+20230823 18:02:00.534 - INFO - +-- START KEYWORD: BuiltIn.Run Keyword And Continue On Failure [ Should be Equal | 1 | 2 ]
+20230823 18:02:00.534 - INFO - +--- START KEYWORD: BuiltIn.Should Be Equal [ 1 | 2 ]
+20230823 18:02:00.534 - DEBUG - Argument types are:
+<class 'str'>
+<class 'str'>
+20230823 18:02:00.534 - FAIL - 1 != 2
+20230823 18:02:00.534 - DEBUG - Traceback (most recent call last):
+  None
+AssertionError: 1 != 2
+20230823 18:02:00.534 - INFO - +--- END KEYWORD: BuiltIn.Should Be Equal (0)
+20230823 18:02:00.534 - INFO - +-- END KEYWORD: BuiltIn.Run Keyword And Continue On Failure (0)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20230823 18:02:00.534 - INFO - +-- START KEYWORD: User Keyword 1 [ ]
+20230823 18:02:00.534 - INFO - +--- START KEYWORD: BuiltIn.Run Keyword And Continue On Failure [ Should be Equal | 3 | 4 ]
+20230823 18:02:00.534 - INFO - +---- START KEYWORD: BuiltIn.Should Be Equal [ 3 | 4 ]
+20230823 18:02:00.534 - DEBUG - Argument types are:
+<class 'str'>
+<class 'str'>
+20230823 18:02:00.534 - FAIL - 3 != 4
+20230823 18:02:00.534 - DEBUG - Traceback (most recent call last):
+  None
+AssertionError: 3 != 4
+20230823 18:02:00.534 - INFO - +---- END KEYWORD: BuiltIn.Should Be Equal (0)
+20230823 18:02:00.534 - INFO - +--- END KEYWORD: BuiltIn.Run Keyword And Continue On Failure (0)
+20230823 18:02:00.534 - INFO - +--- START KEYWORD: BuiltIn.Log [ This is executed ]
+20230823 18:02:00.534 - INFO - This is executed
+20230823 18:02:00.534 - INFO - +--- END KEYWORD: BuiltIn.Log (0)
+20230823 18:02:00.534 - INFO - +-- END KEYWORD: User Keyword 1 (0)
+------------------------------------------------------------------------------
+20230823 18:02:00.534 - INFO - +- END TEST: Test 1 (0)
+------------------------------------------------------------------------------
+20230823 18:02:00.549 - INFO - +- START TEST: Test 2 [ ]
+------------------------------------------------------------------------------
+20230823 18:02:00.549 - INFO - +-- START KEYWORD: BuiltIn.Should Be Equal [ 1 | 2 ]
+20230823 18:02:00.549 - DEBUG - Argument types are:
+<class 'str'>
+<class 'str'>
+20230823 18:02:00.549 - FAIL - 1 != 2
+20230823 18:02:00.549 - DEBUG - Traceback (most recent call last):
+  None
+AssertionError: 1 != 2
+20230823 18:02:00.549 - INFO - +-- END KEYWORD: BuiltIn.Should Be Equal (0)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20230823 18:02:00.549 - INFO - +-- START KEYWORD: User Keyword 2 [ ]
+20230823 18:02:00.549 - INFO - +--- START KEYWORD: BuiltIn.Should Be Equal [ 3 | 4 ]
+20230823 18:02:00.549 - DEBUG - Argument types are:
+<class 'str'>
+<class 'str'>
+20230823 18:02:00.549 - FAIL - 3 != 4
+20230823 18:02:00.549 - DEBUG - Traceback (most recent call last):
+  None
+AssertionError: 3 != 4
+20230823 18:02:00.549 - INFO - +--- END KEYWORD: BuiltIn.Should Be Equal (0)
+20230823 18:02:00.549 - INFO - +--- START KEYWORD: BuiltIn.Log [ This is executed ]
+20230823 18:02:00.549 - INFO - This is executed
+20230823 18:02:00.549 - INFO - +--- END KEYWORD: BuiltIn.Log (0)
+20230823 18:02:00.549 - INFO - +-- END KEYWORD: User Keyword 2 (0)
+------------------------------------------------------------------------------
+20230823 18:02:00.549 - INFO - +- END TEST: Test 2 (15)
+------------------------------------------------------------------------------
+20230823 18:02:00.549 - INFO - +- START TEST: loop Example [ ]
+------------------------------------------------------------------------------
+20230823 18:02:00.549 - INFO - +-- START FOR: ${index} IN RANGE [ 10 ] [ ]
+20230823 18:02:00.549 - INFO - +--- START ITERATION: ${index} = 0 [ ]
+20230823 18:02:00.549 - INFO - +---- START KEYWORD: Do Something [ ]
+20230823 18:02:00.549 - FAIL - No keyword with name 'Do Something' found.
+20230823 18:02:00.549 - INFO - +---- END KEYWORD: Do Something (0)
+20230823 18:02:00.549 - INFO - +--- END ITERATION: ${index} = 0 (0)
+20230823 18:02:00.549 - INFO - +--- START ITERATION: ${index} = 1 [ ]
+20230823 18:02:00.549 - INFO - +---- START KEYWORD: Do Something [ ]
+20230823 18:02:00.549 - FAIL - No keyword with name 'Do Something' found.
+20230823 18:02:00.549 - INFO - +---- END KEYWORD: Do Something (0)
+20230823 18:02:00.549 - INFO - +--- END ITERATION: ${index} = 1 (0)
+20230823 18:02:00.549 - INFO - +--- START ITERATION: ${index} = 2 [ ]
+20230823 18:02:00.564 - INFO - +---- START KEYWORD: Do Something [ ]
+20230823 18:02:00.564 - FAIL - No keyword with name 'Do Something' found.
+20230823 18:02:00.564 - INFO - +---- END KEYWORD: Do Something (0)
+20230823 18:02:00.564 - INFO - +--- END ITERATION: ${index} = 2 (15)
+20230823 18:02:00.564 - INFO - +--- START ITERATION: ${index} = 3 [ ]
+20230823 18:02:00.564 - INFO - +---- START KEYWORD: Do Something [ ]
+20230823 18:02:00.564 - FAIL - No keyword with name 'Do Something' found.
+20230823 18:02:00.564 - INFO - +---- END KEYWORD: Do Something (0)
+20230823 18:02:00.564 - INFO - +--- END ITERATION: ${index} = 3 (0)
+20230823 18:02:00.564 - INFO - +--- START ITERATION: ${index} = 4 [ ]
+20230823 18:02:00.564 - INFO - +---- START KEYWORD: Do Something [ ]
+20230823 18:02:00.564 - FAIL - No keyword with name 'Do Something' found.
+20230823 18:02:00.564 - INFO - +---- END KEYWORD: Do Something (0)
+20230823 18:02:00.564 - INFO - +--- END ITERATION: ${index} = 4 (0)
+20230823 18:02:00.564 - INFO - +--- START ITERATION: ${index} = 5 [ ]
+20230823 18:02:00.564 - INFO - +---- START KEYWORD: Do Something [ ]
+20230823 18:02:00.564 - FAIL - No keyword with name 'Do Something' found.
+20230823 18:02:00.564 - INFO - +---- END KEYWORD: Do Something (0)
+20230823 18:02:00.564 - INFO - +--- END ITERATION: ${index} = 5 (0)
+20230823 18:02:00.564 - INFO - +--- START ITERATION: ${index} = 6 [ ]
+20230823 18:02:00.564 - INFO - +---- START KEYWORD: Do Something [ ]
+20230823 18:02:00.564 - FAIL - No keyword with name 'Do Something' found.
+20230823 18:02:00.564 - INFO - +---- END KEYWORD: Do Something (0)
+20230823 18:02:00.564 - INFO - +--- END ITERATION: ${index} = 6 (0)
+20230823 18:02:00.564 - INFO - +--- START ITERATION: ${index} = 7 [ ]
+20230823 18:02:00.564 - INFO - +---- START KEYWORD: Do Something [ ]
+20230823 18:02:00.564 - FAIL - No keyword with name 'Do Something' found.
+20230823 18:02:00.564 - INFO - +---- END KEYWORD: Do Something (0)
+20230823 18:02:00.564 - INFO - +--- END ITERATION: ${index} = 7 (0)
+20230823 18:02:00.564 - INFO - +--- START ITERATION: ${index} = 8 [ ]
+20230823 18:02:00.580 - INFO - +---- START KEYWORD: Do Something [ ]
+20230823 18:02:00.580 - FAIL - No keyword with name 'Do Something' found.
+20230823 18:02:00.580 - INFO - +---- END KEYWORD: Do Something (0)
+20230823 18:02:00.580 - INFO - +--- END ITERATION: ${index} = 8 (16)
+20230823 18:02:00.580 - INFO - +--- START ITERATION: ${index} = 9 [ ]
+20230823 18:02:00.580 - INFO - +---- START KEYWORD: Do Something [ ]
+20230823 18:02:00.580 - FAIL - No keyword with name 'Do Something' found.
+20230823 18:02:00.580 - INFO - +---- END KEYWORD: Do Something (0)
+20230823 18:02:00.580 - INFO - +--- END ITERATION: ${index} = 9 (0)
+20230823 18:02:00.580 - INFO - +-- END FOR: ${index} IN RANGE [ 10 ] (31)
+------------------------------------------------------------------------------
+20230823 18:02:00.580 - INFO - +- END TEST: loop Example (31)
+------------------------------------------------------------------------------
+20230823 18:02:00.580 - INFO - +- START TEST: recursive-continue-on-failure Example [ ]
+------------------------------------------------------------------------------
+20230823 18:02:00.580 - INFO - +-- START KEYWORD: BuiltIn.Should Be Equal [ 1 | 2 ]
+20230823 18:02:00.580 - DEBUG - Argument types are:
+<class 'str'>
+<class 'str'>
+20230823 18:02:00.580 - FAIL - 1 != 2
+20230823 18:02:00.580 - DEBUG - Traceback (most recent call last):
+  None
+AssertionError: 1 != 2
+20230823 18:02:00.580 - INFO - +-- END KEYWORD: BuiltIn.Should Be Equal (0)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20230823 18:02:00.580 - INFO - +-- START KEYWORD: User Keyword 3 [ ]
+20230823 18:02:00.580 - INFO - +--- START KEYWORD: BuiltIn.Should Be Equal [ 3 | 4 ]
+20230823 18:02:00.580 - DEBUG - Argument types are:
+<class 'str'>
+<class 'str'>
+20230823 18:02:00.580 - FAIL - 3 != 4
+20230823 18:02:00.580 - DEBUG - Traceback (most recent call last):
+  None
+AssertionError: 3 != 4
+20230823 18:02:00.580 - INFO - +--- END KEYWORD: BuiltIn.Should Be Equal (0)
+20230823 18:02:00.580 - INFO - +--- START KEYWORD: User Keyword 4 [ ]
+20230823 18:02:00.580 - INFO - +---- START KEYWORD: BuiltIn.Should Be Equal [ 5 | 6 ]
+20230823 18:02:00.580 - DEBUG - Argument types are:
+<class 'str'>
+<class 'str'>
+20230823 18:02:00.580 - FAIL - 5 != 6
+20230823 18:02:00.580 - DEBUG - Traceback (most recent call last):
+  None
+AssertionError: 5 != 6
+20230823 18:02:00.580 - INFO - +---- END KEYWORD: BuiltIn.Should Be Equal (0)
+20230823 18:02:00.580 - INFO - +---- START KEYWORD: BuiltIn.Log [ This is executed ]
+20230823 18:02:00.580 - INFO - This is executed
+20230823 18:02:00.580 - INFO - +---- END KEYWORD: BuiltIn.Log (0)
+20230823 18:02:00.580 - INFO - +--- END KEYWORD: User Keyword 4 (0)
+20230823 18:02:00.580 - INFO - +--- START KEYWORD: BuiltIn.Log [ This is executed ]
+20230823 18:02:00.580 - INFO - This is executed
+20230823 18:02:00.580 - INFO - +--- END KEYWORD: BuiltIn.Log (0)
+20230823 18:02:00.580 - INFO - +-- END KEYWORD: User Keyword 3 (0)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20230823 18:02:00.580 - INFO - +-- START KEYWORD: BuiltIn.Log [ This is executed ]
+20230823 18:02:00.580 - INFO - This is executed
+20230823 18:02:00.580 - INFO - +-- END KEYWORD: BuiltIn.Log (0)
+------------------------------------------------------------------------------
+20230823 18:02:00.596 - INFO - +- END TEST: recursive-continue-on-failure Example (16)
+------------------------------------------------------------------------------
+20230823 18:02:00.596 - INFO - +- START TEST: Disable continue-in-failure with templates [ ]
+------------------------------------------------------------------------------
+20230823 18:02:00.596 - INFO - +-- START KEYWORD: BuiltIn.Should Be Equal [ this | fails ]
+20230823 18:02:00.596 - DEBUG - Argument types are:
+<class 'str'>
+<class 'str'>
+20230823 18:02:00.596 - FAIL - this != fails
+20230823 18:02:00.596 - DEBUG - Traceback (most recent call last):
+  None
+AssertionError: this != fails
+20230823 18:02:00.596 - INFO - +-- END KEYWORD: BuiltIn.Should Be Equal (0)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20230823 18:02:00.596 - INFO - +-- START KEYWORD: BuiltIn.Should Be Equal [ this | is not run ]
+20230823 18:02:00.596 - INFO - +-- END KEYWORD: BuiltIn.Should Be Equal (0)
+------------------------------------------------------------------------------
+20230823 18:02:00.596 - INFO - +- END TEST: Disable continue-in-failure with templates (0)
+------------------------------------------------------------------------------
+20230823 18:02:00.596 - INFO - +- START TEST: Tag example [ ]
+------------------------------------------------------------------------------
+20230823 18:02:00.596 - INFO - +-- START KEYWORD: BuiltIn.Log [ Smokw tag executed ]
+20230823 18:02:00.596 - INFO - Smokw tag executed
+20230823 18:02:00.596 - INFO - +-- END KEYWORD: BuiltIn.Log (0)
+------------------------------------------------------------------------------
+20230823 18:02:00.596 - INFO - +- END TEST: Tag example (0)
+------------------------------------------------------------------------------
+20230823 18:02:00.596 - INFO - + END SUITE: testExecutionFlow (108)
+==============================================================================
