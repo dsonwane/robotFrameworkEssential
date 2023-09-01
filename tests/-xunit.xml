@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="testExecutionFlow" tests="8" errors="0" failures="5" skipped="2" time="0.101" timestamp="2023-08-23T18:02:46.371000">
+<testcase classname="testExecutionFlow" name="Skip on failure Example" time="0.000">
+<skipped message="Test failed but skip-on-failure mode was active and it was marked skipped.&#10;&#10;Original failure:&#10;this test will be marked as skipped instead of failed" type="SkipExecution"/>
+</testcase>
+<testcase classname="testExecutionFlow" name="Skip Example" time="0.000">
+<skipped message="Test skipped using 'robot:skip' tag." type="SkipExecution"/>
+</testcase>
+<testcase classname="testExecutionFlow" name="Test 1" time="0.000">
+<failure message="Several failures occurred:&#10;&#10;1) 1 != 2&#10;&#10;2) 3 != 4" type="AssertionError"/>
+</testcase>
+<testcase classname="testExecutionFlow" name="Test 2" time="0.016">
+<failure message="Several failures occurred:&#10;&#10;1) 1 != 2&#10;&#10;2) 3 != 4" type="AssertionError"/>
+</testcase>
+<testcase classname="testExecutionFlow" name="loop Example" time="0.024">
+<failure message="Several failures occurred:&#10;&#10;1) No keyword with name 'Do Something' found.&#10;&#10;2) No keyword with name 'Do Something' found.&#10;&#10;3) No keyword with name 'Do Something' found.&#10;&#10;4) No keyword with name 'Do Something' found.&#10;&#10;5) No keyword with name 'Do Something' found.&#10;&#10;6) No keyword with name 'Do Something' found.&#10;&#10;7) No keyword with name 'Do Something' found.&#10;&#10;8) No keyword with name 'Do Something' found.&#10;&#10;9) No keyword with name 'Do Something' found.&#10;&#10;10) No keyword with name 'Do Something' found." type="AssertionError"/>
+</testcase>
+<testcase classname="testExecutionFlow" name="recursive-continue-on-failure Example" time="0.016">
+<failure message="Several failures occurred:&#10;&#10;1) 1 != 2&#10;&#10;2) 3 != 4&#10;&#10;3) 5 != 6" type="AssertionError"/>
+</testcase>
+<testcase classname="testExecutionFlow" name="Disable continue-in-failure with templates" time="0.000">
+<failure message="this != fails" type="AssertionError"/>
+</testcase>
+<testcase classname="testExecutionFlow" name="Tag example" time="0.000">
+</testcase>
+<properties>
+<property name="Documentation" value="Execution Flow"/>
+</properties>
+</testsuite>
