@@ -17,7 +17,7 @@ Search inxigo
     Verify Search Criteria
 
 *** Keywords ***
- Go To Homepage
+Go To Homepage
     Go To    https://www.ixigo.com/
     Maximize Browser Window
     Set Selenium Implicit Wait    10 seconds
